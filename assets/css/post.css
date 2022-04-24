@@ -45,7 +45,7 @@ header {
 }
 main {
   margin: 0 auto;
-  max-width: 650px;
+  max-width: 55%;
   padding: 3rem 0 4rem 0;
 }
 .article {
@@ -91,6 +91,7 @@ main {
 .content p {
   margin: 0 0 1.75rem 0;
   padding: 0;
+  text-align: justify;
 }
 .content h1 {
   font-size: 2rem;
