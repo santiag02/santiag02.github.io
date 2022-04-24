@@ -1,7 +1,7 @@
 title: Santiago's notes
 markdown: kramdown
 url: ""
-baseurl: "/santiagos-notes"
+baseurl: ""
 
 # for atom feed
 author:
