@@ -1,11 +1,11 @@
-title: Santiago's notes
+title: Camila's notes
 markdown: kramdown
 url: ""
 baseurl: ""
 
 # for atom feed
 author:
-  name: Santiago
+  name: Camila
   email: email@outlook.com
 
 plugins:
