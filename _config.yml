@@ -1,12 +1,12 @@
-title: Jekyll Serial Programmer
+title: Santiago's notes
 markdown: kramdown
 url: ""
-baseurl: "/jekyll-theme-serial-programmer"
+baseurl: "/santiagos-notes"
 
 # for atom feed
 author:
-  name: Sharad Raj Singh Maurya
-  email: dev_sharad@outlook.com
+  name: Santiago
+  email: email@outlook.com
 
 plugins:
   - jemoji

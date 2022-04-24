@@ -63,6 +63,8 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
     minitest (5.14.4)
+    nokogiri (1.13.3-aarch64-linux)
+      racc (~> 1.4)
     nokogiri (1.13.3-x86_64-linux)
       racc (~> 1.4)
     pathutil (0.16.2)
@@ -85,6 +87,7 @@ GEM
     zeitwerk (2.5.1)
 
 PLATFORMS
+  aarch64-linux
   x86_64-linux
 
 DEPENDENCIES
@@ -94,4 +97,4 @@ DEPENDENCIES
   jemoji
 
 BUNDLED WITH
-   2.2.26
+   2.3.10
