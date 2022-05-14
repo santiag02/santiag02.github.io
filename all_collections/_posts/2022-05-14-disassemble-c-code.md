@@ -191,7 +191,7 @@ When performing the div or idiv instruction, you are dividing EDX:EAX by the val
 
 Functions are one kind of scope that have the parameters and variables allocated in a stack to do local operations. This block of data is called stack frame, that count with respectively this item pushed into the stack: arguments, return address, EBP (Base Pointer), local variables and ESP (Stack Pointer), this last one always point to the top item in the stack.
 
-|![](https://raw.githubusercontent.com/santiag02/santiag02.github.io/main/all_collections/_posts/Images/stack.png))|
+|![](https://raw.githubusercontent.com/santiag02/santiag02.github.io/main/all_collections/_posts/Images/stack.png)|
 |:---:|
 |Stack Struct|
 
