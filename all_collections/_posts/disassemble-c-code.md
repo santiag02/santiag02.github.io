@@ -1,4 +1,10 @@
-# Recognizing C code after disassemble it
+---
+layout: post
+title: Recognizing C code after disassemble it
+date: 2022-05-14 21:00:00
+categories: [code, reverse-engineering, c, assembly ]
+---
+
 
 In this post our goal should be to learn how to recognize different type of variables, structs and operations in a disassembly code.
 
