@@ -562,8 +562,6 @@ Decompiling with Radare.
 |for (int i = 0; i < 4; i++)|mov dword [rbp - 0x24], 0<br>jmp 0x11c9<br>cmp dword [rbp - 0x24], 3<br>jle 0x11a9<br>add dword [rbp - 0x24], 1|
 |printf("%d\n", ip_address[i]);|mov eax, dword [rbp - 0x24]<br>cdqe<br>mov eax, dword [rbp + rax*4 - 0x20]<br>mov esi, eax<br>lea rdi, [0x00002004]<br>mov eax, 0<br>call sym.imp.printf|
 
-[COMPARAR COM OUTRO TIPO - EX: CHAR, DOUBLE]
-
 
 ## Struct
 
