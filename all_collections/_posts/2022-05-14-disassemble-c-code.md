@@ -95,16 +95,13 @@ The ESI and EDI registers are used in buffer data manipulation operations. ESI i
 
 The stack is used to store local variables, functions parameters, and the return address. Two registers are commonly used, ESP and EBP. ESP is the stack pointer and typically contains a memory address that points to the top of stack. It's value will change as items are pushed on and popped off the stack. The EBP is the base pointer that stays consistent within a given function, so that the program can use it as a placeholder to keep track of the location of a local variable and parameter. You will find it always as a base for local variables as [rbp - 4].
 
-It's possible to read data from the stack without using the push or pop instructions. Fo example, the instruction mov eax, ss:[esp] will directly access the top of the stack.
+It's possible to read data from the stack without using the push or pop instructions. For example, the instruction mov eax, ss:[esp] will directly access the top of the stack, because the ss is not exactly a register but a stack segment (ss).
 
 With you find some of these register here, you can get some hits of the use if you remember the meaning of them.
 - CS = Code Segment (used for IP)
 - DS = Data Segment (used for MOV)
 - ES = Destination Segment (used for MOVS, etc.)
 - SS = Stack Segment (used for SP)
-
-
-
 
 ## Arithmetic Operations
 
@@ -183,7 +180,7 @@ Remember the multiples of 4 are used because all of our variable have 4 bytes in
 |b = a%b;|mov eax, dword [rbp - 0xc]<br>cdq<br>idiv dword [rbp - 8]<br>mov dword [rbp - 8], edx|
 |total = a*b;|mov eax, dword [rbp - 0xc]<br>imul eax, dword [rbp - 8]<br>mov dword [rbp - 4], eax|
 
-The mul value instruction always multiples EAX by value. The result is stored as a 64-bit value across two registers, EDX:EAX. EDX stores the most significant 32/64 bits and EAX the stores the least significant 32/64 bits.
+The mul value instruction always multiples EAX by value. The result is stored as a 64-bit value across the register EAX. But consider a environment of 32 bits and you would like to save a variable with 64 bits, so you'll nedd two registers, EDX:EAX. EDX stores the most significant 64 bits and EAX the stores the least significant 64 bits.
 
 When performing the div or idiv instruction, you are dividing EDX:EAX by the value and storing the result in EAX and the remainder in EDX.
 
